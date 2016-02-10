@@ -1,0 +1,9 @@
+{
+    "name": "userB",
+    "number": "2",
+    "attrA": "A",
+    "info": {
+        "password": "passwordB"
+    },
+    "attrB": "B"
+}

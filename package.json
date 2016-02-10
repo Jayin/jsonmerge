@@ -1,0 +1,32 @@
+{
+  "name": "jsonmerge-cli",
+  "version": "1.0.0",
+  "description": "merge json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "jsonmerge": "bin/jsonmerge.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jayin/jsonmerge-cli.git"
+  },
+  "keywords": [
+    "json",
+    "merge",
+    "cli"
+  ],
+  "author": "Jayin Ton",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Jayin/jsonmerge-cli/issues"
+  },
+  "homepage": "https://github.com/Jayin/jsonmerge-cli#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "glob": "^6.0.4",
+    "lodash": "^4.3.0"
+  }
+}
