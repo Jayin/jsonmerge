@@ -3,7 +3,11 @@
 ## Install 
 
 ```shell
+# with cli
 $ npm install -g jsonmerge
+
+# dependency in your project
+$ npm install --save jsonmerge
 ```
 
 ## Usage
