@@ -8,10 +8,9 @@ const glob = require("glob")
 const pkg = require('../package.json')
 
 program
-  .version(pkn.version)
+  .version(pkg.version)
   .arguments('[source...]')
   .description('merge the source json file to dest json file')
-  // .option('-f, --format ', 'format the json, default: false', false)
   .action(function (source, options) {
     if (source && source.length >= 1) {
       let result = {}
