@@ -2,30 +2,16 @@
 
 'use strict'
 const program = require('commander')
-const fs = require('fs')
-const _ = require('lodash')
-const glob = require("glob")
 const pkg = require('../package.json')
+const jsonmerge = require('../')
 
 program
   .version(pkg.version)
   .arguments('[source...]')
   .description('merge the source json file to dest json file')
   .action(function (source, options) {
-    if (source && source.length >= 1) {
-      let result = {}
-      let jsonFiles = []
-      
-      source.forEach(function (pattern){
-        jsonFiles = _.concat(jsonFiles, glob.sync(pattern))
-      })
-      
-      jsonFiles.forEach(function (json_file) {
-        let json_string = fs.readFileSync(json_file, {encoding: 'utf-8'})
-        result = _.merge(result, JSON.parse(json_string))
-      })
+    let result = jsonmerge(source)
+    console.log(JSON.stringify(result, null, 4))
 
-      console.log(JSON.stringify(result, null, 4))
-    }
   })
   .parse(process.argv)
