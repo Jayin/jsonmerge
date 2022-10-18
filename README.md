@@ -1,4 +1,4 @@
-# jsonmerge [![v](https://img.shields.io/npm/v/jsonmerge.svg)](https://www.npmjs.com/package/jsonmerge)
+# jsonmerge [![v](https://img.shields.io/npm/v/jsonmerge.svg)](https://www.npmjs.com/package/jsonmerge) [![dm](https://img.shields.io/npm/dm/jsonmerge.svg)](https://www.npmjs.com/package/jsonmerge)
 
 ## Install 
 
