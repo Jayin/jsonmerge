@@ -4,6 +4,8 @@
   "description": "merge json file",
   "main": "index.js",
   "scripts": {
+    "lint:fix": "eslint . --fix",
+    "lint": "eslint .",
     "test": "xv"
   },
   "bin": {
@@ -31,6 +33,9 @@
     "strip-json-trailing-commas": "^1.1.0"
   },
   "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-fritx": "^0.0.3",
+    "eslint-plugin-es5": "^1.5.0",
     "xv": "^1.1.1"
   }
 }

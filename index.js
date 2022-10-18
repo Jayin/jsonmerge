@@ -9,7 +9,7 @@ module.exports = function (source, options) {
 
   let result = {}
   if (source && source.length >= 1) {
-    
+
     let jsonFiles = []
 
     source.forEach(function (pattern) {
@@ -25,4 +25,4 @@ module.exports = function (source, options) {
     })
   }
   return result
-} 
+}
