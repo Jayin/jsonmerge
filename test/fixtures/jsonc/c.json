@@ -1,0 +1,15 @@
+{
+    /**
+     * block
+     * commenting
+     */
+    "name": "userC",
+    "number": "3",
+    "attrC": "c",
+    // a comment
+    "info": {
+        "username": "jayin",
+        "password": "123"
+    }
+    /* some comment */
+}
