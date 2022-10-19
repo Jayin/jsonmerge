@@ -1,4 +1,4 @@
-# jsonmerge [![v](https://img.shields.io/npm/v/jsonmerge.svg)](https://www.npmjs.com/package/jsonmerge)
+# jsonmerge [![v](https://img.shields.io/npm/v/jsonmerge.svg)](https://www.npmjs.com/package/jsonmerge) [![dm](https://img.shields.io/npm/dm/jsonmerge.svg)](https://www.npmjs.com/package/jsonmerge)
 
 ## Install 
 
@@ -16,8 +16,12 @@ $ npm install --save jsonmerge
 
 ```javascript
 const jsonmerge = require('jsonmerge')
-
 let result = jsonmerge(['./test/fixtures/json/*.json'])
+
+// or with jsonc support
+const jsonmerge = require('jsonmerge/jsonc')
+let result = jsonmerge(['./test/fixtures/jsonc/*.json'])
+
 console.log(JSON.stringify(result, null, 4))
 ```
 
@@ -26,6 +30,9 @@ console.log(JSON.stringify(result, null, 4))
 ```shell
 $ cd test/fixtures
 $ jsonmerge json/*.json > result.json
+
+# or with jsonc support
+$ jsonmerge --jsonc jsonc/*.json > result.json
 ```
 
 ## License 

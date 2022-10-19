@@ -1,0 +1,14 @@
+// a comment
+{
+    "name": "userB",
+    /* some comment */
+    "number": "2",
+    "attrB": "B",
+    "info": {
+        "password": "passwordB"
+    }
+}
+/**
+  * block
+  * commenting
+  */
