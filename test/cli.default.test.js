@@ -21,6 +21,8 @@ exports.testEmptyInput = function () {
 
 exports.testJsonc = function () {
   let res = helper.cli(['jsonc/*.json'])
-  assert.equal(res.stdout, '')
+  assert.ok(res.error)
+  assert.match(res.error.message, /SyntaxError: Unexpected token/)
   assert.match(res.stderr, /SyntaxError: Unexpected token/)
+  assert.equal(res.stdout, '')
 }
