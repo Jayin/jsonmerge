@@ -6,6 +6,7 @@
   "scripts": {
     "lint:fix": "eslint . --fix",
     "lint": "eslint .",
+    "test:cov": "c8 -x test -x strip-json-comments xv",
     "test": "xv"
   },
   "bin": {
@@ -33,6 +34,8 @@
     "strip-json-trailing-commas": "^1.1.0"
   },
   "devDependencies": {
+    "@cjs-mifi-test/execa": "^6.0.0",
+    "c8": "^7.12.0",
     "eslint": "^8.25.0",
     "eslint-config-fritx": "^0.0.3",
     "eslint-plugin-es5": "^1.5.0",

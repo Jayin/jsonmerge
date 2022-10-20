@@ -9,7 +9,7 @@
     // a comment
     "info": {
         "username": "jayin",
-        "password": "123"
+        "password": "123",
     }
     /* some comment */
 }
