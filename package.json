@@ -6,7 +6,7 @@
   "scripts": {
     "lint:fix": "eslint . --fix",
     "lint": "eslint .",
-    "test:cov": "c8 -x test -x strip-json-comments xv",
+    "test:cov": "c8 -x test -x strip-json-comments -r text -r json-summary xv",
     "test": "xv"
   },
   "bin": {
