@@ -34,4 +34,8 @@ jobs:
       - name: Lint
         run: npm run lint
       - name: Test
-        run: npm run test
+        run: npm run test:cov
+
+      - name: Update Coverage Badge
+        if: ${{ matrix.os == 'ubuntu-22.04' && matrix.node-version == 18 }}
+        uses: we-cli/coverage-badge-action@main
