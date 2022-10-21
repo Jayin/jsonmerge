@@ -1,5 +1,5 @@
 # jsonmerge [![v](https://img.shields.io/npm/v/jsonmerge.svg)](https://www.npmjs.com/package/jsonmerge) [![dm](https://img.shields.io/npm/dm/jsonmerge.svg)](https://www.npmjs.com/package/jsonmerge) [![unit](https://github.com/Jayin/jsonmerge/actions/workflows/unit-test.yml/badge.svg)](https://github.com/Jayin/jsonmerge/actions/workflows/unit-test.yml) [![e2e](https://github.com/Jayin/jsonmerge/actions/workflows/e2e-test.yml/badge.svg)](https://github.com/Jayin/jsonmerge/actions/workflows/e2e-test.yml)
-)
+
 
 ## Install 
 
