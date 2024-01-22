@@ -20,9 +20,9 @@ jobs:
         node-version:
           # trying to pick up the lowest versions within the supported options
           # https://github.com/actions/node-versions/blob/main/versions-manifest.json
-          - 6
+          # - 6
           - 8
-          # - 10 # skip
+          - 10 # skip
           # - 12 # skip
           # - 14 # skip
         os:
@@ -51,7 +51,7 @@ jobs:
           node -e "assert.equal(fs.readFileSync('tmp.json','utf8'), fs.readFileSync('result.json','utf8'))"
       - name: Test Jsonc
         # current jsonc implementation requires node>=8
-        if: matrix.node-version == 8
+        if: matrix.node-version >= 8
         run: |
           cd test/fixtures
           jsonmerge --jsonc jsonc/*.json > tmp.jsonc
