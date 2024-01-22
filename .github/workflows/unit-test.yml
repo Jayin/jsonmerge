@@ -37,5 +37,14 @@ jobs:
         run: npm run test:cov
 
       - name: Update Coverage Badge
-        if: ${{ matrix.os == 'ubuntu-22.04' && matrix.node-version == 18 }}
+        # Is there a way to tell if a PR is from a forked repository? #26829
+        # https://github.com/orgs/community/discussions/26829#discussioncomment-3253580
+        if: >-
+          matrix.os == 'ubuntu-22.04' && matrix.node-version == 18 && ((
+            github.event_name == 'pull_request' &&
+            github.event.pull_request.head.repo.full_name == github.repository
+          ) || (
+            github.event_name == 'pull_request_target' &&
+            github.event.pull_request.head.repo.full_name != github.repository
+          ))
         uses: we-cli/coverage-badge-action@main
